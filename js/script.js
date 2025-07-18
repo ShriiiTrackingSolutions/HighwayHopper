@@ -76,16 +76,12 @@ function loadHeaderFooter(callback) {
                     <i class="fa-solid fa-circle-chevron-right"></i>About Us</a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                  <a class="footerLinks" href="services.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Services</a>
                 </li>
                 <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
-                </li>
-                <li>
-                  <a class="footerLinks" href="#">
-                    <i class="fa-solid fa-circle-chevron-right"></i>link</a>
+                  <a class="footerLinks" href="Taxis.html">
+                    <i class="fa-solid fa-circle-chevron-right"></i>Taxis</a>
                 </li>
                 <li>
                   <a class="footerLinks" href="contactUs.html">
