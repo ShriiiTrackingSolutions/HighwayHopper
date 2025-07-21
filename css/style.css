@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Geometos Neue Ultra' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    src: url('../fonts/FONTSPRINGDEMO-GeometosNeueUltraRegular.woff2') format('woff2'),
+        url('../fonts/FONTSPRINGDEMO-GeometosNeueUltraRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 /* Font Families */
 
 :root {
@@ -1032,3 +1042,52 @@ border-radius: 8px;
   color: var(--primary-color);
   background-color: #1a1a1a;
 }
+
+.Banner{
+  position: relative;
+}
+
+
+
+  .marquee {
+            position: absolute;
+            top: 16px;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 5rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            /* -webkit-text-stroke: 6px #ffffff; */
+        }
+
+        .marquee-track {
+            display: inline-flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .marquee-track .content {
+            display: flex;
+        }
+
+        .marquee-track span {
+            margin-right: 1rem;
+            font-family: 'FONTSPRING DEMO - Geometos Neue Ultra','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Front marquee */
+        .marquee-front {
+            bottom: 20%;
+            z-index: 3;
+        }

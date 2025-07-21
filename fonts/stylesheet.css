@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Geometos Neue Ultra';
+    src: url('FONTSPRINGDEMO-GeometosNeueUltraRegular.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-GeometosNeueUltraRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

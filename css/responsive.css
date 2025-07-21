@@ -169,6 +169,15 @@
   width: 80%;
 }
 
+ .marquee {
+    top: 40px;
+    font-size: 2rem;
+    /* -webkit-text-stroke: 4px #ffffff; */
+}
+
+ .marquee-track {
+    animation: scroll 18s linear infinite;
+}
 
 }
 
