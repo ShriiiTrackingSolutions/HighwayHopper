@@ -104,7 +104,7 @@ function loadHeaderFooter(callback) {
               <h5 class="fourthH ">Contact Us</h5>
               <ul class="contact-info">
                 <li>
-                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/KxtrUiUbzNh5FQ1A7">
+                  <a class="locationLink footerLinks" target="_blank" href="https://maps.app.goo.gl/oFApu71tw1iP8GbZ9">
                     <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                       <pre class="mb-0">
 Address 31/2 Saibaba flats,
