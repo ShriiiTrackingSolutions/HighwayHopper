@@ -1002,8 +1002,11 @@ border-radius: 8px;
   padding: 40px;
 }
 
-.taxiBooking  .form-control{
+.taxiBooking  .form-control,.taxiBooking .form-select{
   height: 46px;
+}
+.taxiBooking  .form-control::placeholder{
+  color: #a5a5a5;
 }
 
 .taxiBooking  .input-group-text {

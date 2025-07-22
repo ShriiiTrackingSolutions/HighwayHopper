@@ -89,7 +89,7 @@ function loadHeaderFooter(callback) {
                 </li>
               </ul>
             </div>
-            <div class="col-sm-6 col-lg-auto mb-4 mb-md-0 exploreLinks1">
+            <div class="col-sm-6 col-lg-auto d-none mb-4 mb-md-0 exploreLinks1">
               <h5 class="fourthH ">Explore Link</h5>
               <ul>   
                  <li><a href="#" class="footerLinks"><i class="fa-solid fa-circle-chevron-right"></i> link HERE</a></li> 

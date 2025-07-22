@@ -97,16 +97,17 @@
 <!-- taxi Booking section start -->
 <section class="taxiBooking">
   <div class="container">
-    <form class="row g-3 needs-validation mt-2" id="contactForm" novalidate>
+    <form class="row g-3 needs-validation mt-2 justify-content-center" id="contactForm" novalidate>
           <div class="col-12 carTypeBtn mb-3" >
-              <a href="#" data-value="basic" class="TaxyType active"><img src="image/BasicIcon.webp" alt="Basic Taxi"><br>Basic</a>
-              <a href="#" data-value="comfort" class="TaxyType"><img src="image/ComfortIcon.webp" alt="Comfort Taxi"><br>Comfort</a>
-              <a href="#" data-value="luxury" class="TaxyType"><img src="image/LuxuryIcon.webp" alt="Luxury Taxi"><br>Luxury</a>
+              <a href="#" data-value="hatchpack" class="TaxyType active"><img src="image/hatchpack.webp" alt="hatchpack"><br>Hatchpack</a>
+              <a href="#" data-value="SUV" class="TaxyType"><img src="image/SUV.webp" alt="SUV"><br>SUV</a>
+              <a href="#" data-value="MiniBus" class="TaxyType"><img src="image/MiniBus.webp" alt="MiniBus"><br>MiniBus</a>
+              <a href="#" data-value="Bus" class="TaxyType"><img src="image/Bus.webp" alt="Bus"><br>Bus</a>
               <input type="hidden" id="type-Type" name="type-Type" class="type-Type" value="">
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="input-group mb-3 has-validation">
-              <input type="text" class="form-control" id="LocationFrom"  placeholder="Address From..." aria-label="Address From..." aria-describedby="fromIcon" required>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="LocationFrom"  placeholder="Pick Up Location..." aria-label="Pick Up Location..." aria-describedby="fromIcon" required>
               <span class="input-group-text" id="fromIcon"><i class="fa-solid fa-location-dot"></i></span>
               <div class="invalid-feedback">
                   Please enter location for pickUp.
@@ -114,8 +115,8 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="input-group mb-3 has-validation">
-              <input type="text" class="form-control" id="LocationTo"  placeholder="Address To..." aria-label="Address To..." aria-describedby="toIcon" required>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="LocationTo"  placeholder="Drop Location..." aria-label="Drop Location..." aria-describedby="toIcon" required>
               <span class="input-group-text" id="toIcon"><i class="fa-solid fa-location-dot"></i></span>
               <div class="invalid-feedback">
                   Please enter location for drop.
@@ -123,7 +124,7 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="input-group mb-3 has-validation">
+            <div class="input-group has-validation">
               <input type="tel" class="form-control" id="PhoneNo"  placeholder="Phone No..." aria-label="Phone No..." aria-describedby="TelePhoneIcon" required>
               <span class="input-group-text" id="TelePhoneIcon"><i class="fa-solid fa-phone"></i></span>
               <div class="invalid-feedback">
@@ -132,14 +133,38 @@
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <div class="input-group mb-3 has-validation">
-              <input type="text" class="form-control" id="PhoneNo"  placeholder="Date And Time..." aria-label="Date And Time..." aria-describedby="TelePhoneIcon" required>
-              <span class="input-group-text" id="TelePhoneIcon"><i class="fa-solid fa-calendar-days"></i></span>
+            <div class="input-group has-validation">
+              <input type="text" class="form-control" id="DateAbdTime"  placeholder="Date And Time..." aria-label="Date And Time..." aria-describedby="dateAndTime" required>
+              <span class="input-group-text" id="dateAndTime"><i class="fa-solid fa-calendar-days"></i></span>
               <div class="invalid-feedback">
                   Please enter date and time.
               </div>
             </div>
           </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="input-group has-validation">
+              <select class="form-select" id="tripOption" aria-label="trip Option" aria-describedby="tripOptions" required>
+                <option selected disabled value="">Trip Option...</option>
+                <option value="One Way">One Way</option>
+                <option value="Two Way">Two Way</option>
+              </select>
+              <span class="input-group-text" id="tripOptions"><i class="fa-solid fa-repeat"></i></span>
+              <div class="invalid-feedback">
+                  Please enter trip type.
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-lg-3 col-md-6">
+            <div class="input-group has-validation">
+              <input type="number" class="form-control" id="numberOfPassengers"  placeholder="Number Of Passengers" aria-label="Number Of Passengers" aria-describedby="Passengers count" required>
+              <span class="input-group-text" id="Passengers count"><i class="fa-solid fa-user-plus"></i></span>
+              <div class="invalid-feedback">
+                  Please enter number of passengers.
+              </div>
+            </div>
+          </div>
+          
 
           <div class="col-12 mt-0">
             <button class="btnFill d-table mx-auto" id="desktopBtn" type="submit">Book Taxi</button>
@@ -604,7 +629,7 @@
   });
 </script>
 
-
+<!-- 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const carTypeButtons = document.querySelectorAll('.carTypeBtn .TaxyType');
@@ -666,7 +691,93 @@
       }
     }, false);
   });
+</script> -->
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carTypeButtons = document.querySelectorAll(".carTypeBtn .TaxyType");
+    const hiddenInput = document.getElementById("type-Type");
+    const form = document.getElementById("contactForm");
+    const defaultActive = document.querySelector(".carTypeBtn .TaxyType.active");
+    const phoneNumber = "919537528239";
+
+    // Set default car type
+    if (defaultActive) {
+      hiddenInput.value = defaultActive.getAttribute("data-value");
+      console.log("Default car type:", hiddenInput.value);
+    }
+
+    // Handle car type selection
+    carTypeButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        e.preventDefault();
+        carTypeButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+        hiddenInput.value = button.getAttribute("data-value");
+        console.log("Selected car type:", hiddenInput.value);
+      });
+    });
+
+    // WhatsApp message construction
+    function constructWhatsAppMessage() {
+      const pickUp = document.getElementById("LocationFrom").value || "N/A";
+      const drop = document.getElementById("LocationTo").value || "N/A";
+      const phone = document.getElementById("PhoneNo").value || "N/A";
+      const datetime = document.getElementById("DateAbdTime").value || "N/A";
+      const tripOption = document.getElementById("tripOption").value || "N/A";
+      const passengers = document.getElementById("numberOfPassengers").value || "N/A";
+      const carType = hiddenInput.value || "N/A";
+
+      return `Hello, I want to book a taxi:\n\nPickup: ${pickUp}\nDrop: ${drop}\nPhone: ${phone}\nDate & Time: ${datetime}\nTrip Option: ${tripOption}\nPassengers: ${passengers}\nCar Type: ${carType}`;
+    }
+
+    // Detect device type
+    function isMobileDevice() {
+      return /android|iphone|ipad|iPod/i.test(navigator.userAgent.toLowerCase());
+    }
+
+    // Form submission & WhatsApp redirection
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (form.checkValidity()) {
+        const message = constructWhatsAppMessage();
+        const encodedMessage = encodeURIComponent(message);
+
+        let whatsappUrl;
+        if (isMobileDevice()) {
+          whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        } else {
+          whatsappUrl = `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+        }
+
+        console.log("WhatsApp URL:", whatsappUrl);
+        window.open(whatsappUrl, "_blank");
+
+        // Show modal
+        const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
+        confirmationModal.show();
+
+        // Reset form and car type
+        form.reset();
+        form.classList.remove("was-validated");
+        carTypeButtons.forEach((btn) => btn.classList.remove("active"));
+        if (defaultActive) {
+          defaultActive.classList.add("active");
+          hiddenInput.value = defaultActive.getAttribute("data-value");
+          console.log("Car type reset to default:", hiddenInput.value);
+        }
+      } else {
+        form.classList.add("was-validated");
+        console.warn("Form validation failed.");
+      }
+    });
+  });
 </script>
+
 
 
 
