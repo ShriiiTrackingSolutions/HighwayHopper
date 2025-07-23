@@ -84,7 +84,7 @@
       <div class="col-lg-7">
         <h1 class="display-2">Book Your Taxi — <span>Fast, Safe & Affordable</span></h1>
         <p class="fifthH">Trusted rides at your fingertips. Whether it’s a city transfer, airport pickup, or corporate trip — we’ve got you covered 24/7 with reliable service and professional drivers.</p>
-        <a class="btnFill" href="contactUs.html"><i class="fa-regular fa-calendar-days"></i> Book Taxi Now  </a>
+        <a class="btnFill" href="#taxiBookingForm"><i class="fa-regular fa-calendar-days"></i> Book Taxi Now  </a>
       </div>
       <div class="col-lg-5">
         <img src="image/BANNERtAXI.webp" alt="Taxi">
@@ -96,10 +96,13 @@
 
 <!-- taxi Booking section start -->
 <section class="taxiBooking">
+  <div class="MrIndia" id="taxiBookingForm"></div>
   <div class="container">
+    <h2 class="fourthH text-center text-white mb-4">Your booking will be confirmed after advance payment.</h2>
     <form class="row g-3 needs-validation mt-2 justify-content-center" id="contactForm" novalidate>
           <div class="col-12 carTypeBtn mb-3" >
               <a href="#" data-value="hatchback" class="TaxyType active"><img src="image/hatchpack.webp" alt="hatchback"><br>Hatchback</a>
+              <a href="#" data-value="Sedan" class="TaxyType"><img src="image/Sedan.webp" alt="Sedan"><br>Sedan</a>
               <a href="#" data-value="SUV" class="TaxyType"><img src="image/SUV.webp" alt="SUV"><br>SUV</a>
               <a href="#" data-value="MiniBus" class="TaxyType"><img src="image/MiniBus.webp" alt="MiniBus"><br>MiniBus</a>
               <a href="#" data-value="Bus" class="TaxyType"><img src="image/Bus.webp" alt="Bus"><br>Bus</a>
@@ -146,7 +149,7 @@
               <select class="form-select" id="tripOption" aria-label="trip Option" aria-describedby="tripOptions" required>
                 <option selected disabled value="">Trip Option...</option>
                 <option value="One Way">One Way</option>
-                <option value="Two Way">Two Way</option>
+                <option value="Round Trip">Round Trip</option>
               </select>
               <span class="input-group-text" id="tripOptions"><i class="fa-solid fa-repeat"></i></span>
               <div class="invalid-feedback">
@@ -171,17 +174,19 @@
           </div>
         </form>
 
+        <p class="text-white text-center mt-4"><strong class="text-warning">Please note:</strong> A minimum 1-hour lead time is required to arrange your ride.</p>
+
         <!-- Confirmation Modal -->
 <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content text-center">
       <div class="modal-header border-0">
-        <h5 class="modal-title w-100" id="confirmationModalLabel">Booking Confirmed</h5>
+        <h5 class="modal-title w-100" id="confirmationModalLabel">Thank you!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 512 512"><path fill="#6a9f4c" d="M17.47 250.9C88.82 328.1 158 397.6 224.5 485.5c72.3-143.8 146.3-288.1 268.4-444.37L460 26.06C356.9 135.4 276.8 238.9 207.2 361.9c-48.4-43.6-126.62-105.3-174.38-137z" stroke-width="13" stroke="#6a9f4c"/></svg>
-        <p class="mt-4 text-success">Thank you! Your taxi booking has been received. We’ll contact you shortly to confirm details.</p>
+        <p class="mt-4 text-success">Your taxi enquiry has been received. We'll contact you shortly to confirm the ride.</p>
       </div>
     </div>
   </div>
