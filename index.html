@@ -275,9 +275,11 @@
   <!-- Filter Buttons -->
   <div class="text-center filter-btns mb-4">
     <button class="btn btn-warning filter-btn" data-filter="all">All</button>
-    <button class="btn btn-outline-dark filter-btn" data-filter="basic">Basic Rides</button>
-    <button class="btn btn-outline-dark filter-btn" data-filter="comfort">Comfort Rides</button>
-    <button class="btn btn-outline-dark filter-btn" data-filter="luxury">Luxury Rides</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="Hatchback">Hatchback</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="Sedan">Sedan</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="SUV">SUV</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="MiniBus">MiniBus</button>
+    <button class="btn btn-outline-dark filter-btn" data-filter="Bus">Bus</button>
   </div>
 
   <!-- Display Carousel -->
@@ -286,166 +288,140 @@
   <!-- Hidden All Items -->
   <div id="all-items" style="display: none;">
     <!-- Basic Rides -->
-    <div class="item car-card" data-category="basic">
-      <img loading="lazy" src="image/MarutiSuzukiAlto.jpg" alt="Maruti Suzuki Alto">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Maruti Suzuki Alto</h5>
-      <p>₹1.50 / km</p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy"src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="basic">
-      <img loading="lazy" src="image/TataIndica.jpg" alt="Tata Indica">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Tata Indica</h5>
-      <p>₹1.60 / km</p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="basic">
-      <img loading="lazy" src="image/HyundaiSantro.jpg" alt="Hyundai Santro">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Hyundai Santro</h5>
-      <p>₹1.60 / km </p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="basic">
+
+    <div class="item car-card" data-category="Hatchback">
       <img loading="lazy" src="image/MarutiWagonR.jpg" alt="Maruti WagonR">
       <div class="taxiCarInfo">
       <h5 class="fifthH">Maruti WagonR</h5>
-      <p>₹1.70 / km</p>
+      <p>₹10 / km — A/C</p>
       <ul class="carInfoList">
         <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
 
-    <!-- Comfort Rides -->
-    <div class="item car-card" data-category="comfort">
+    <div class="item car-card" data-category="Sedan">
       <img loading="lazy" src="image/MarutiSuzukiDzire.jpg" alt="Maruti Suzuki Dzire">
       <div class="taxiCarInfo">
       <h5 class="fifthH">Maruti Suzuki Dzire</h5>
-      <p>₹2.00 / km</p>
+      <p>₹11 / km — A/C</p>
       <ul class="carInfoList">
         <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="comfort">
-      <img loading="lazy" src="image/ToyotaEtios.jpg" alt="Toyota Etios">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Toyota Etios</h5>
-      <p>₹2.10 / km</p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="comfort">
-      <img loading="lazy" src="image/HondaAmaze.jpg" alt="Honda Amaze">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Honda Amaze</h5>
-      <p>₹2.10 / km</p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy"src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
-      </ul>
-      <button class="btn btn-md">Book Now</button>
-      </div>
-    </div>
-    <div class="item car-card" data-category="comfort">
-      <img loading="lazy" src="image/HyundaiXcent.jpg" alt="Hyundai Xcent">
-      <div class="taxiCarInfo">
-      <h5 class="fifthH">Hyundai Xcent</h5>
-      <p>₹2.00 / km</p>
-      <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
 
-    <!-- Luxury Rides -->
-    <div class="item car-card" data-category="luxury">
+    <div class="item car-card" data-category="SUV">
+      <img loading="lazy" src="image/MarutiSuzukiErtiga.webp" alt="Maruti Suzuki Ertiga">
+      <div class="taxiCarInfo">
+      <h5 class="fifthH">Maruti Suzuki Ertiga</h5>
+      <p>₹13 / km — A/C</p>
+      <ul class="carInfoList">
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>6 Seats</span></li>
+      </ul>
+      <button class="btn btn-md">Book Now</button>
+      </div>
+    </div>
+
+    <div class="item car-card" data-category="SUV">
+      <img loading="lazy" src="image/ToyotaInnovaHycross.webp" alt="Toyota Innova Hycross">
+      <div class="taxiCarInfo">
+      <h5 class="fifthH">Toyota Innova Hycross</h5>
+      <p>₹16 / km — A/C</p>
+      <ul class="carInfoList">
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>6 Seats</span></li>
+      </ul>
+      <button class="btn btn-md">Book Now</button>
+      </div>
+    </div>
+
+    <div class="item car-card" data-category="SUV">
       <img loading="lazy" src="image/ToyotaInnovaCrysta.jpg" alt="Toyota Innova Crysta">
       <div class="taxiCarInfo">
       <h5 class="fifthH">Toyota Innova Crysta</h5>
-      <p>₹2.50 / km</p>
+      <p>₹18 / km — A/C</p>
       <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>6 Seats</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
-    <div class="item car-card" data-category="luxury">
-      <img loading="lazy" src="image/HyundaiVerna.jpg" alt="Hyundai Verna">
+
+    <div class="item car-card" data-category="MiniBus">
+      <img loading="lazy" src="image/tempoTraveller12Seater.webp" alt="Tempo traveller">
       <div class="taxiCarInfo">
-      <h5 class="fifthH">Hyundai Verna</h5>
-      <p>₹2.50 / km</p>
+      <h5 class="fifthH">Tempo traveller</h5>
+      <p>₹24 / km — A/C</p>
       <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>12 Seats</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
-    <div class="item car-card" data-category="luxury">
-      <img loading="lazy" src="image/SkodaSuperb.jpg" alt="Skoda Superb">
+
+    <div class="item car-card" data-category="MiniBus">
+      <img loading="lazy" src="image/tempoTraveller17Seater.webp" alt="Tempo traveller">
       <div class="taxiCarInfo">
-      <h5 class="fifthH">Skoda Superb</h5>
-      <p>₹3.00 / km</p>
+      <h5 class="fifthH">Tempo traveller</h5>
+      <p>₹26 / km — A/C</p>
       <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>17 Seats</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
-    <div class="item car-card" data-category="luxury">
-      <img loading="lazy" src="image/ToyotaCamry_Fortuner.jpg" alt="Toyota Camry / Fortuner">
+
+    <div class="item car-card" data-category="MiniBus">
+      <img loading="lazy" src="image/tempoTraveller20Seater.webp" alt="Tempo traveller">
       <div class="taxiCarInfo">
-      <h5 class="fifthH">Toyota Camry / Fortuner</h5>
-      <p>₹3.50 / km</p>
+      <h5 class="fifthH">Tempo traveller</h5>
+      <p>₹30 / km — A/C</p>
       <ul class="carInfoList">
-        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>4 Seats</span></li>
-        <li><span><img loading="lazy" src="image/InitialCharge.webp" alt="passenger seat icon">Initial Charge:</span><span>₹800</span></li>
-        <li><span><img loading="lazy" src="image/AdditionalCharge.webp" alt="passenger seat icon">Additional Charge:</span><span>₹50</span></li>
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>20 Seats</span></li>
       </ul>
       <button class="btn btn-md">Book Now</button>
       </div>
     </div>
+
+    <div class="item car-card" data-category="MiniBus">
+      <img loading="lazy" src="image/MiniBusImg.webp" alt="Mini Bus">
+      <div class="taxiCarInfo">
+      <h5 class="fifthH">Mini Bus</h5>
+      <p>₹36 / km — A/C</p>
+      <ul class="carInfoList">
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>25 Seats</span></li>
+      </ul>
+      <button class="btn btn-md">Book Now</button>
+      </div>
+    </div>
+
+    <div class="item car-card" data-category="Bus">
+      <img loading="lazy" src="image/BusNonAC.webp" alt="Bus">
+      <div class="taxiCarInfo">
+      <h5 class="fifthH">Bus</h5>
+      <p>₹48 / km — Non-A/C</p>
+      <ul class="carInfoList">
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>56 Seats</span></li>
+      </ul>
+      <button class="btn btn-md">Book Now</button>
+      </div>
+    </div>
+    
+    <div class="item car-card" data-category="Bus">
+      <img loading="lazy" src="image/BusImg.webp" alt="Bus">
+      <div class="taxiCarInfo">
+      <h5 class="fifthH">Bus</h5>
+      <p>₹52 / km — A/C</p>
+      <ul class="carInfoList">
+        <li><span><img loading="lazy" src="image/PassengerSeat.webp" alt="passenger seat icon">Passenger Seat:</span><span>56 Seats</span></li>
+      </ul>
+      <button class="btn btn-md">Book Now</button>
+      </div>
+    </div>
+
+
 
   </div>
   </div>
@@ -634,69 +610,6 @@
   });
 </script>
 
-<!-- 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const carTypeButtons = document.querySelectorAll('.carTypeBtn .TaxyType');
-    const hiddenInput = document.getElementById('type-Type');
-
-    // Set default value based on active button
-    const defaultActive = document.querySelector('.carTypeBtn .TaxyType.active');
-    if (defaultActive) {
-      hiddenInput.value = defaultActive.getAttribute('data-value');
-      console.log("Default car type:", hiddenInput.value);
-    }
-
-    // Handle car type button clicks
-    carTypeButtons.forEach(button => {
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        // Remove 'active' class from all buttons
-        carTypeButtons.forEach(btn => btn.classList.remove('active'));
-
-        // Add 'active' class to the clicked button
-        button.classList.add('active');
-
-        // Update hidden input value
-        const selectedValue = button.getAttribute('data-value');
-        hiddenInput.value = selectedValue;
-
-        // Log selected car type
-        console.log("Selected car type:", selectedValue);
-      });
-    });
-
-    // Form validation and modal
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-
-      if (form.checkValidity()) {
-        const selectedCarType = hiddenInput.value;
-        console.log("Form submitted with car type:", selectedCarType);
-
-        const confirmationModal = new bootstrap.Modal(document.getElementById('confirmationModal'));
-        confirmationModal.show();
-
-        form.reset();
-        form.classList.remove('was-validated');
-
-        // Reset car type to default
-        carTypeButtons.forEach(btn => btn.classList.remove('active'));
-        if (defaultActive) {
-          defaultActive.classList.add('active');
-          hiddenInput.value = defaultActive.getAttribute('data-value');
-          console.log("Car type reset to default:", hiddenInput.value);
-        }
-      } else {
-        console.warn("Form submission blocked. Validation failed.");
-        form.classList.add('was-validated');
-      }
-    }, false);
-  });
-</script> -->
 
 
 
