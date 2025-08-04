@@ -518,7 +518,7 @@ header{
 }
 
 .f-bottom .row {
-  justify-content: center;
+  justify-content: space-between;
 }
 .footer .social-icons a:hover {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
@@ -536,6 +536,14 @@ header{
   background: var(--primary-color);
   padding: 12px 0;
   color: var(--black);
+}
+.copyRightLink{
+  color: var(--black);
+  font-weight: 600;
+  transition: 0.3s ease-in-out; 
+}
+.copyRightLink:hover{
+  color: var(--secondary-color);
 }
 
 .copyright b:hover {

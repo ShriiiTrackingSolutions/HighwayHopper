@@ -139,7 +139,7 @@ Vadodara 390020</pre>
       <div class="f-bottom effect">
         <div class="container">
           <div class="row ">
-            <div class="col-12">
+            <div class="col-auto">
               <div class="inner">
                 <div class="copyright text-center"> <span class="year"></span>  All Rights Reserved by Highway Hopper | Developed by <a href="https://shriiitrackingsolution.in/" target="_blank">
                     <b>Shriii&nbsp;Tracking&nbsp;Solution</b>
@@ -147,6 +147,12 @@ Vadodara 390020</pre>
                 </div>
               </div>
             </div>
+            <div class="col-auto">
+              <a target="_blank" class="copyRightLink" href="TermsAndConditions.html">
+                 Terms&nbsp;&&nbsp;Conditions  
+                </a>
+            </div>
+            
           </div>
         </div>
       </div> `; // Keep your current footer HTML here
