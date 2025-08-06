@@ -630,6 +630,7 @@ text-align: center;
       border-radius: 0;
     }
     .car-card {
+      aspect-ratio: 4/3;
       background: var(--secondary-color);
       text-align: center;
       box-shadow: 0 0 10px #0000001a;
