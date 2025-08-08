@@ -88,6 +88,15 @@ function loadHeaderFooter(callback) {
                     <i class="fa-solid fa-circle-chevron-right"></i>Contact</a>
                 </li>
               </ul>
+              <h5 class="fourthH mt-4 mb-0">Social Links</h5>
+              <div class="social-icons mt-3">
+                <a target="_blank" class="instagram" href="https://www.instagram.com/high_way.hoppers/">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=919537528239">
+                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
             <div class="col-sm-6 col-lg-auto d-none mb-4 mb-md-0 exploreLinks1">
               <h5 class="fourthH ">Explore Link</h5>
@@ -121,14 +130,10 @@ Vadodara 390020</pre>
                     <i class="fa-solid fa-envelope" aria-hidden="true"></i>highwayhoppers.bookings@gmail.com</a>
                 </li>
               </ul>
-              <div class="social-icons mt-3">
-                <a target="_blank" class="instagram" href="https://www.instagram.com/high_way.hoppers/">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a class="whatsapp set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://api.whatsapp.com/send?phone=919537528239">
-                  <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                </a>
-              </div>
+                  <div class="PoweredByImg mt-3">     
+                    <img style="max-width:318.5px" src="image/PoweredBy.webp" alt="Powered By AV group of industries">
+                  </div>
+              
             </div>
           
             <!-- Contact Info -->

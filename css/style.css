@@ -422,7 +422,7 @@ header{
 .footWrap  > .row {
   justify-content: space-between;
 }
-.exploreLinks a i {
+.exploreLinks li a i {
   margin-right: 8px;
   font-size: 15px;
 }
@@ -499,9 +499,12 @@ header{
 .footer .social-icons {
   display: flex;
   align-items: center;
-  padding-left: 44px;
+  padding-left: 20px;
   gap: 10px;
   margin-top: 20px;
+  margin: auto;
+  width: 203px;
+  max-width: 203px !important;
 }
 .footer p {
   color: #ffffff;

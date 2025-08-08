@@ -86,11 +86,6 @@
     row-gap: 40px;
     flex-direction: column;
   }
-   .footer .social-icons {
-    justify-content: center;
-    padding-left: 0;
-    padding-right: 0;
-  }
 
   .footer .exploreLinks ul li,
   .footer .exploreLinks1 ul li {
